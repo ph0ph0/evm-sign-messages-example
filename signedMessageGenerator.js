@@ -1,8 +1,5 @@
 const { ethers } = require("ethers");
 
-const privateKey =
-  "0xcf038c8a292755cdd249ca744a1d8767339d91e271ad0cc78a3bc3b3b70d0f14";
-
 async function sign(tokenAmount, recipient) {
   const signer = new ethers.Wallet(privateKey);
 

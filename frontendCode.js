@@ -3,11 +3,11 @@ const { ethers } = require("ethers");
 async function sendTransaction(tokenAmount, recipient) {
 
   const contractABI = [
-      // TBD, import from a separate file 
+      // import from a separate file 
   ]  
   const contractAddress = // TBD, import from .env  
 
-  const provider = new ethers.providers.JsonRpcProvider("<FILECOIN RPC URL, import from .env>");
+  const provider = new ethers.providers.JsonRpcProvider("<RPC URL, import from .env>");
   const signer = new ethers.Wallet(privateKey, provider);
 
   const contract = new ethers.Contract(contractAddress, contractABI, signer);
